@@ -1,16 +1,6 @@
 #!/bin/bash
-#
 # Copyright (c) 2019-2020 P3TERX <https://p3terx.com>
 #
-# This is free software, licensed under the MIT License.
-# See /LICENSE for more information.
-#
-# https://github.com/P3TERX/Actions-OpenWrt
-# File name: diy-part2.sh
-# Description: OpenWrt DIY script part 2 (After Update feeds)
-#
-# Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
 # 配置自定义主题
 #
@@ -43,6 +33,9 @@ svn co https://github.com/echoops/Packages/trunk/luci-app-turboacc package/commu
 #
 # > 版本显示信息
 #sed -i "s/# REVISION:=x/REVISION:=Mod by echoops/g" include/version.mk
+#
+# > 修改插件位置
+sed -i 's/\"services\"/\"nas\"/g' feeds/luci/applications/luci-app-upnp/luasrc/controller/upnp.lua
 #
 # > 修改插件名字
 sed -i 's/"网络存储"/"存储"/g' package/lean/luci-app-amule/po/zh-cn/amule.po
