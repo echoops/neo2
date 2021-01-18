@@ -31,8 +31,11 @@ svn co https://github.com/echoops/Packages/trunk/luci-app-turboacc package/commu
 
 # 个性化配置修改
 #
-# > 版本显示信息
-#sed -i "s/# REVISION:=x/REVISION:=Mod by echoops/g" include/version.mk
+# > Mod
+sed -i '$i '"sed -i '/luciname/d' /usr/lib/lua/luci/version.lua"'' package/default-settings/files/zzz-default-settings
+sed -i '$i '"echo 'luciname = \"Limitless\"' >> /usr/lib/lua/luci/version.lua"'' package/default-settings/files/zzz-default-settings
+sed -i '$i '"sed -i '/luciversion/d' /usr/lib/lua/luci/version.lua"'' package/default-settings/files/zzz-default-settings
+sed -i '$i '"echo 'luciversion = \"Mod\"' >> /usr/lib/lua/luci/version.lua"'' package/default-settings/files/zzz-default-settings
 #
 # > 修改插件位置
 sed -i 's/\"services\"/\"network\"/g' feeds/luci/applications/luci-app-upnp/luasrc/controller/upnp.lua
