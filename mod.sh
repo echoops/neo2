@@ -32,10 +32,10 @@ svn co https://github.com/echoops/Packages/trunk/luci-app-turboacc package/commu
 # 个性化配置修改
 #
 # > Mod
-sed -i '$i '"sed -i '/luciname/d' /usr/lib/lua/luci/version.lua"'' package/default-settings/files/zzz-default-settings
-sed -i '$i '"echo 'luciname = \"Limitless\"' >> /usr/lib/lua/luci/version.lua"'' package/default-settings/files/zzz-default-settings
-sed -i '$i '"sed -i '/luciversion/d' /usr/lib/lua/luci/version.lua"'' package/default-settings/files/zzz-default-settings
-sed -i '$i '"echo 'luciversion = \"Mod\"' >> /usr/lib/lua/luci/version.lua"'' package/default-settings/files/zzz-default-settings
+sed -i '$i '"sed -i '/luciname/d' /usr/lib/lua/luci/version.lua"'' package/lean/default-settings/files/zzz-default-settings
+sed -i '$i '"echo 'luciname = \"Limitless\"' >> /usr/lib/lua/luci/version.lua"'' package/lean/default-settings/files/zzz-default-settings
+sed -i '$i '"sed -i '/luciversion/d' /usr/lib/lua/luci/version.lua"'' package/lean/default-settings/files/zzz-default-settings
+sed -i '$i '"echo 'luciversion = \"Mod\"' >> /usr/lib/lua/luci/version.lua"'' package/lean/default-settings/files/zzz-default-settings
 #
 # > 修改插件位置
 sed -i 's/\"services\"/\"network\"/g' feeds/luci/applications/luci-app-upnp/luasrc/controller/upnp.lua
@@ -49,7 +49,7 @@ sed -i 's/"带宽监控"/"监视"/g' feeds/luci/applications/luci-app-nlbwmon/po
 sed -i 's/"实时流量监测"/"流量"/g' package/lean/luci-app-wrtbwmon/po/zh-cn/wrtbwmon.po
 sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/community/luci-app-turboacc/po/zh-cn/turboacc.po
 sed -i 's/"KMS 服务器"/"服务激活"/g' package/lean/luci-app-vlmcsd/po/zh-cn/vlmcsd.zh-cn.po
-sed -i 's/"TTYD 终端"/"命令行"/g' package/lean/luci-app-ttyd/po/zh-cn/terminal.po
+sed -i 's/"TTYD 终端"/"网页终端"/g' package/lean/luci-app-ttyd/po/zh-cn/terminal.po
 sed -i 's/"USB 打印服务器"/"打印服务"/g' package/lean/luci-app-usb-printer/po/zh-cn/usb-printer.po
 sed -i 's/"解锁网易云灰色歌曲"/"网易云音乐解锁"/g' package/lean/luci-app-unblockmusic/po/zh-cn/unblockmusic.po
 #
