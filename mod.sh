@@ -39,16 +39,18 @@ sed -i '$i '"echo 'luciversion = \"Mod\"' >> /usr/lib/lua/luci/version.lua"'' pa
 #
 # > 修改插件位置
 sed -i 's/\"services\"/\"network\"/g' feeds/luci/applications/luci-app-upnp/luasrc/controller/upnp.lua
+sed -i 's/\"nas\"/\"services\"/g' package/lean/luci-app-nfs/luasrc/controller/nfs.lua
 #
 # > 修改插件名字
-sed -i 's/"解锁网易云灰色歌曲"/"网易云音乐解锁"/g' package/lean/luci-app-unblockmusic/po/zh-cn/unblockmusic.po
-sed -i 's/"Web 管理"/"Web"/g' package/lean/luci-app-webadmin/po/zh-cn/webadmin.po
-sed -i 's/"带宽监控"/"监视"/g' feeds/luci/applications/luci-app-nlbwmon/po/zh-cn/nlbwmon.po
-sed -i 's/"TTYD 终端"/"网页终端"/g' package/lean/luci-app-ttyd/po/zh-cn/terminal.po
-sed -i 's/"KMS 服务器"/"KMS 激活服务"/g' package/lean/luci-app-vlmcsd/po/zh-cn/vlmcsd.zh-cn.po
-sed -i 's/"网络共享"/"SMB 文件共享"/g' package/lean/luci-app-samba4/po/zh-cn/samba4.po
-sed -i 's/"NFS 管理"/"NFS 文件共享"/g' package/lean/luci-app-nfs/po/zh-cn/nfs.po
-sed -i 's/"IP\/MAC绑定"/"静态 ARP"/g' package/lean/luci-app-arpbind/po/zh-cn/arpbind.po
-sed -i 's/\"UPnP\"/\"通用即插即用\"/g' feeds/luci/applications/luci-app-upnp/po/zh-cn/upnp.po
-sed -i 's/"Turbo ACC 网络加速"/"网络加速设置"/g' package/lean/luci-app-flowoffload/po/zh-cn/flowoffload.po
+sed -i 's/\"解锁网易云灰色歌曲\"/\"网易云音乐解锁\"/g' package/lean/luci-app-unblockmusic/po/zh-cn/unblockmusic.po
+sed -i 's/\"UU游戏加速器\"/\"网易游戏加速器\"/g' package/lean/luci-app-uugamebooster/po/zh-cn/uuplugin.po
+sed -i 's/\"带宽监控\"/\"监视\"/g' feeds/luci/applications/luci-app-nlbwmon/po/zh-cn/nlbwmon.po
+sed -i 's/\"TTYD 终端\"/\"网页终端\"/g' package/lean/luci-app-ttyd/po/zh-cn/terminal.po
+sed -i 's/\"动态 DNS\"/\"动态域名解析\"/g' feeds/luci/applications/luci-app-ddns/po/zh-cn/ddns.po
+sed -i 's/\"KMS 服务器\"/\"KMS 激活服务\"/g' package/lean/luci-app-vlmcsd/po/zh-cn/vlmcsd.zh-cn.po
+sed -i 's/\"网络共享\"/\"SMB 文件共享\"/g' package/lean/luci-app-samba4/po/zh-cn/samba4.po
+sed -i 's/\"NFS 管理\"/\"NFS 文件共享\"/g' package/lean/luci-app-nfs/po/zh-cn/nfs.po
+sed -i 's/\"IP\/MAC绑定\"/\"静态 ARP\"/g' package/lean/luci-app-arpbind/po/zh-cn/arpbind.po
+sed -i 's/\"UPnP\"/\"端口转发\"/g' feeds/luci/applications/luci-app-upnp/po/zh-cn/upnp.po
+sed -i 's/\"Turbo ACC 网络加速\"/\"网络加速\"/g' package/lean/luci-app-flowoffload/po/zh-cn/flowoffload.po
 #
