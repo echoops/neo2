@@ -26,7 +26,7 @@ git clone https://github.com/jerrykuku/lua-maxminddb package/community/lua-maxmi
 git clone https://github.com/jerrykuku/luci-app-vssr package/community/luci-app-vssr
 #
 # > TurboACC
-svn co https://github.com/echoops/Packages/trunk/luci-app-turboacc package/community/luci-app-turboacc
+#svn co https://github.com/echoops/Packages/trunk/luci-app-turboacc package/community/luci-app-turboacc
 #
 
 # 个性化配置修改
@@ -41,15 +41,13 @@ sed -i '$i '"echo 'luciversion = \"Mod\"' >> /usr/lib/lua/luci/version.lua"'' pa
 sed -i 's/\"services\"/\"network\"/g' feeds/luci/applications/luci-app-upnp/luasrc/controller/upnp.lua
 #
 # > 修改插件名字
-sed -i 's/"网络存储"/"存储"/g' package/lean/luci-app-amule/po/zh-cn/amule.po
-sed -i 's/"网络存储"/"存储"/g' package/lean/luci-app-vsftpd/po/zh-cn/vsftpd.po
-sed -i 's/"网络存储"/"存储"/g' package/lean/luci-app-usb-printer/po/zh-cn/usb-printer.po
+sed -i 's/"解锁网易云灰色歌曲"/"网易云音乐解锁"/g' package/lean/luci-app-unblockmusic/po/zh-cn/unblockmusic.po
 sed -i 's/"Web 管理"/"Web"/g' package/lean/luci-app-webadmin/po/zh-cn/webadmin.po
 sed -i 's/"带宽监控"/"监视"/g' feeds/luci/applications/luci-app-nlbwmon/po/zh-cn/nlbwmon.po
-sed -i 's/"实时流量监测"/"流量"/g' package/lean/luci-app-wrtbwmon/po/zh-cn/wrtbwmon.po
-sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/community/luci-app-turboacc/po/zh-cn/turboacc.po
-sed -i 's/"KMS 服务器"/"服务激活"/g' package/lean/luci-app-vlmcsd/po/zh-cn/vlmcsd.zh-cn.po
 sed -i 's/"TTYD 终端"/"网页终端"/g' package/lean/luci-app-ttyd/po/zh-cn/terminal.po
-sed -i 's/"USB 打印服务器"/"打印服务"/g' package/lean/luci-app-usb-printer/po/zh-cn/usb-printer.po
-sed -i 's/"解锁网易云灰色歌曲"/"网易云音乐解锁"/g' package/lean/luci-app-unblockmusic/po/zh-cn/unblockmusic.po
+sed -i 's/"KMS 服务器"/"KMS 激活服务"/g' package/lean/luci-app-vlmcsd/po/zh-cn/vlmcsd.zh-cn.po
+sed -i 's/"网络共享"/"SMB 文件共享"/g' package/lean/luci-app-samba4/po/zh-cn/samba4.po
+sed -i 's/"NFS 管理"/"NFS 文件共享"/g' package/lean/luci-app-nfs/po/zh-cn/nfs.po
+sed -i 's/\"UPnP\"/\"通用即插即用\"/g' feeds/luci/applications/luci-app-upnp/po/zh-cn/upnp.po
+sed -i 's/"Turbo ACC 网络加速"/"网络加速设置"/g' package/lean/luci-app-flowoffload/po/zh-cn/flowoffload.po
 #
