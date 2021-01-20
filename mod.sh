@@ -48,7 +48,7 @@ sed -i '/hd\_idle\.lua/d' package/lean/default-settings/files/zzz-default-settin
 sed -i 's/\"Argon 主题设置\"/\"主题设置\"/g' package/community/luci-app-argon-config/po/zh-cn/argon-config.po
 sed -i 's/\"TTYD 终端\"/\"网页终端\"/g' package/lean/luci-app-ttyd/po/zh-cn/terminal.po
 sed -i 's/\"解锁网易云灰色歌曲\"/\"网易云音乐解锁\"/g' package/lean/luci-app-unblockmusic/po/zh-cn/unblockmusic.po
-sed -i 's/\"网易UU网游加速器\"/\"网易游戏加速器\"/g' package/lean/luci-app-uugamebooster/po/zh-cn/uugamebooster.po
+sed -i 's/\"UU网游加速器\"/\"网易游戏加速器\"/g' package/lean/luci-app-uugamebooster/po/zh-cn/uuplugin.po
 sed -i 's/\"SoftEther VPN 服务器\"/\"SoftEther VPN\"/g' package/lean/luci-app-softethervpn/po/zh-cn/softethervpn.po
 sed -i 's/\"动态 DNS\"/\"DNS 动态域名\"/g' feeds/luci/applications/luci-app-ddns/po/zh-cn/ddns.po
 sed -i 's/\"Nps 内网穿透\"/\"NPS 内网穿透\"/g' package/lean/luci-app-nps/po/zh-cn/nps.po
