@@ -40,8 +40,9 @@ sed -i '$i '"echo 'luciversion = \"Mod\"' >> /usr/lib/lua/luci/version.lua"'' pa
 #
 # > 修改插件位置
 sed -i 's/\"services\"/\"network\"/g' feeds/luci/applications/luci-app-upnp/luasrc/controller/upnp.lua
-sed -i '\"VPN\"/d' package/lean/luci-app-softethervpn/luasrc/controller/softethervpn.lua
+sed -i '/\"VPN\"/d' package/lean/luci-app-softethervpn/luasrc/controller/softethervpn.lua
 sed -i 's/\"vpn\"/\"services\"/g' package/lean/luci-app-softethervpn/luasrc/controller/softethervpn.lua
+sed -i '/hd\_idle\.lua/d' package/lean/default-settings/files/zzz-default-settings
 #
 # > 修改插件名字
 sed -i 's/\"Argon 主题设置\"/\"主题设置\"/g' package/community/luci-app-argon-config/po/zh-cn/argon-config.po
