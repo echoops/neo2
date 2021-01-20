@@ -50,7 +50,7 @@ sed -i 's/\"解锁网易云灰色歌曲\"/\"网易云音乐解锁\"/g' package/l
 sed -i 's/\"网易UU网游加速器\"/\"网易游戏加速器\"/g' package/lean/luci-app-uugamebooster/po/zh-cn/uugamebooster.po
 sed -i 's/\"SoftEther VPN 服务器\"/\"SoftEther VPN\"/g' package/lean/luci-app-softethervpn/po/zh-cn/softethervpn.po
 sed -i 's/\"动态 DNS\"/\"DNS 动态域名\"/g' feeds/luci/applications/luci-app-ddns/po/zh-cn/ddns.po
-sed -i 's/\"Frp 内网穿透\"/\"FRP 内网穿透\"/g' package/lean/luci-app-frpc/po/zh-cn/frp.po
+sed -i 's/\"Nps 内网穿透\"/\"NPS 内网穿透\"/g' package/lean/luci-app-nps/po/zh-cn/nps.po
 sed -i 's/\"KMS 服务器\"/\"KMS 激活服务\"/g' package/lean/luci-app-vlmcsd/po/zh-cn/vlmcsd.zh-cn.po
 sed -i 's/\"网络共享\"/\"SMB 文件共享\"/g' feeds/luci/applications/luci-app-samba/po/zh-cn/samba.po
 sed -i 's/\"硬盘休眠\"/\"硬盘休眠助手\"/g' feeds/luci/applications/luci-app-hd-idle/po/zh-cn/hd_idle.po
