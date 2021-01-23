@@ -16,15 +16,21 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 # 集成自定义插件
 #
 # > AdguardHome
-git clone https://github.com/rufengsuixing/luci-app-adguardhome package/community/luci-app-adguardhome
+#git clone https://github.com/rufengsuixing/luci-app-adguardhome package/community/luci-app-adguardhome
 #
 # > Dockerman
 git clone https://github.com/lisaac/luci-lib-docker package/community/luci-lib-docker
 git clone https://github.com/lisaac/luci-app-dockerman package/community/luci-app-dockerman
 #
+# > DnsFilter
+git clone https://github.com/garypang13/luci-app-dnsfilter package/community/luci-app-dnsfilter
+#
 # > HelloWorld (vssr)
 git clone https://github.com/jerrykuku/lua-maxminddb package/community/lua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-vssr package/community/luci-app-vssr
+#
+# > OpenClash
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/community/luci-app-openclash
 #
 # > TurboACC
 #svn co https://github.com/echoops/Packages/trunk/luci-app-turboacc package/community/luci-app-turboacc
@@ -46,6 +52,7 @@ sed -i '/hd\_idle\.lua/d' package/lean/default-settings/files/zzz-default-settin
 sed -i '/samba\.lua/d' package/lean/default-settings/files/zzz-default-settings
 #
 # > 修改插件名字
+sed -i 's/\"CPU 使用率（%）\"/\"CPU负载\"/g' feeds/luci/modules/luci-base/po/zh-cn/base.po
 sed -i 's/\"Argon 主题设置\"/\"主题设置\"/g' package/community/luci-app-argon-config/po/zh-cn/argon-config.po
 sed -i 's/\"TTYD 终端\"/\"网页终端\"/g' package/lean/luci-app-ttyd/po/zh-cn/terminal.po
 sed -i 's/\"解锁网易云灰色歌曲\"/\"网易云音乐解锁\"/g' package/lean/luci-app-unblockmusic/po/zh-cn/unblockmusic.po
